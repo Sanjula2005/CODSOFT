@@ -51,10 +51,10 @@ while not game_stop:
     if user_choice==computer_choice:
         print("draw")
         score.update_score()
-    elif user_choice<computer_choice:
+    elif user_choice==1 and computer_choice==2 or user_choice==2 and computer_choice==3:
         print("ÿou loose :(")
         score.you_loose()
-    elif user_choice>computer_choice:
+    elif user_choice==2 and computer_choice==1 or user_choice==3 and computer_choice==2:
         print("you win!!")
         score.you_win()
     elif user_choice == 1 and computer_choice == 3:
